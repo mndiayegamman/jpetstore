@@ -27,13 +27,13 @@ Running JPetStore sample under Tomcat (using the [cargo-maven2-plugin](https://c
 - Clone this repository
 
   ```
-  $ git clone https://github.com/mybatis/jpetstore-6.git
+  $ git clone https://github.com/mndiayegamman/jpetstore.git
   ```
 
 - Build war file
 
   ```
-  $ cd jpetstore-6
+  $ cd jpetstore
   $ ./mvnw clean package
   ```
 
