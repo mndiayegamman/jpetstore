@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jpetstore-deployment
+  labels:
+    app.kubernetes.io/app: jpetstore
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/app: jpetstore
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/app: jpetstore
+    spec:
+      containers:
+      - name: jpetstore
+        image: mndiayegamman/jpetstore:v1
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
